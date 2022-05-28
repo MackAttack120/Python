@@ -1,0 +1,55 @@
+#Employee class
+class Employee():
+    def __init__(self,Name,ID,Department,Job_Title):
+        self.Name = Name
+        self.ID = ID
+        self.Department = Department
+        self.Job_Title = Job_Title
+        
+#method to set name
+    def SetName(self,Name):
+        self.Name = Name
+
+#method to return name
+    def GetName(self):
+        return self.Name
+        
+#method to set ID
+    def SetID(self,ID):
+        self.ID = ID
+
+#method to return ID
+    def GetID(self):
+        return self.ID
+
+#method to set Department
+    def SetDepartment(self,Department):
+        self.Department = Department
+
+#method to return Department
+    def GetDepartment(self):
+        return self.Department
+
+#method to set Job_Title
+    def SetJobTitle(self,Job_Title):
+        self.Job_Title = Job_Title
+
+#method to return Job Title
+    def GetJobTitle(self):
+        return self.Job_Title
+
+#method for driver program
+    def FinishedData(self):
+        return "Name: " + self.GetName() + "| ID: " + str(self.GetID()) + "| Department: " + self.GetDepartment() + "| Job Title: " + self.GetJobTitle()
+
+#Driver program
+def main():
+    EID47899 = Employee("Susan Meyers ","47899 ","Accounting ","VP")
+    EID39119 = Employee("Mark Jones ","39119 ","IT ","Programmer")
+    EID81774 = Employee("Joy Rogers ","81774 ","Manufacturing ","Engineer")
+    print(EID47899.FinishedData())
+    print(EID39119.FinishedData())
+    print(EID81774.FinishedData())
+    
+#call main
+main()
